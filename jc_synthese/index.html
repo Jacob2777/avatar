@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Travail synthèse</h1>
+        <form>
+            <label>Texte:
+                <input class="texte" type="text" placeholder="Entrez votre texte">
+            </label>
+
+            <div class="bordure">Bordure:
+                <p class="bouton moins">-</p>
+                <p class="taille-bordure">1px</p>
+                <p class="bouton plus">+</p>
+            </div>
+            
+            <label>Forme:
+                <select class="forme" name="forme" onchange="changementForme()">
+                    <option name="cercle" value="cercle">Cercle</option>
+                    <option name="carre" value="carre">Carré</option>
+                    <option name="carre_arrondie" value="carre_arrondie">Carré arrondie</option>
+                </select>
+            </label>
+
+            <div class="yeux">
+                <a class="yeux-un" href="#">Yeux 1</a>
+                <a class="yeux-deux" href="#">Yeux 2</a>
+                <a class="yeux-trois" href="#">Yeux 3</a>
+            </div>
+
+            <div>Noeud-papillon:
+                <a class="bouton oui" href="#">Oui</a>
+                <a class="bouton non" href="#">Non</a>
+            </div>
+        </form>
+
+    <p class="texte-temps-reel"></p>
+
+    <div class="personnage">
+        <div class="pupille gauche"></div>
+        <div class="pupille droite"></div>
+        <div class="oeil oeil-gauche"></div>
+        <div class="oeil oeil-droit"></div>
+        <div class="bouche"></div>
+
+        <div class="noeud-papillon">
+            <div class="partie-droite"></div>
+            <div class="partie-gauche"></div>
+        </div>
+      </div>
+          <script src="js/main.js"></script>
+</body>
+</html>

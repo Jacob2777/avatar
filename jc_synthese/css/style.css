@@ -1,0 +1,150 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: cursive;
+}
+
+h1{
+    font-size: 4em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form{
+    width: 300px;
+    border-bottom: 3px solid black;
+    padding-bottom: 20px;
+}
+
+.texte{
+    border: 2px solid black;
+    color: rgb(20, 82, 253);
+    font-family: cursive;
+}
+
+.texte-temps-reel{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.bordure{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bouton{
+    background-color: rgb(147, 212, 255);
+    color: rgb(20, 82, 253);
+    font-weight: bold;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 2px black solid;
+    text-decoration: none;
+}
+
+.yeux a{
+    color: black;
+    padding-right: 10px;
+    background-color: rgb(147, 212, 255);
+    color: rgb(20, 82, 253);
+    padding: 5px 10px;
+    border: 2px black solid;
+    text-decoration: none;
+}
+
+.yeux{
+    padding: 15px 0px 25px;
+}
+
+.forme{
+    color: rgb(20, 82, 253);  
+    background-color: rgb(147, 212, 255);
+    border: 2px solid black; 
+    font-family: cursive;
+}
+
+.personnage{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: chartreuse;
+  }
+  
+  .personnage .oeil{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 50%;
+  }
+
+  .personnage .pupille.gauche{
+    position: absolute;
+    left: 50px;
+    top: 42px;
+    z-index: 10;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+  }
+
+  .personnage .pupille.droite{
+    position: absolute;
+    left: 115px;
+    top: 42px;
+    z-index: 10;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  
+  .personnage .oeil-gauche{
+    top: 20%;
+    left: 20%;
+  }
+  
+  .personnage .oeil-droit{
+    top: 20%;
+    right: 20%;
+  }
+      
+  .bouche{
+    background-color: white;
+    border: 3px solid black;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-180deg);
+    position: relative;
+    left: 45px;
+    top: 120px;
+}
+
+.noeud-papillon .partie-droite{
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 60px solid black;
+  transform: rotate(-90deg);
+  position: relative;
+  top: 120px;
+  left: 90px;
+}
+
+.noeud-papillon .partie-gauche{
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 60px solid black;
+  transform: rotate(90deg);
+  position: relative;
+  top: 60px;
+  left: 50px;
+}
